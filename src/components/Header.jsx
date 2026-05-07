@@ -7,17 +7,17 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300">
-      {/* Top Bar: Minimalist & Sleek */}
+      
       <div className="bg-neutral-900 text-white text-[11px] font-medium tracking-widest uppercase py-2.5 text-center px-4">
-        Free shipping on orders over $50! <span className="ml-2 opacity-80 underline cursor-pointer hover:opacity-100">Details</span>
+        Free shipping on orders over ₹1500! <span className="ml-2 opacity-80 underline cursor-pointer hover:opacity-100">Details</span>
       </div>
 
-      {/* Main Navigation */}
+      
       <nav className="bg-white/80 backdrop-blur-md border-b border-gray-100/80 shadow-sm">
         <div className="container mx-auto px-4 lg:px-10 py-3.5">
           <div className="flex items-center justify-between gap-8">
             
-            {/* Mobile Menu Toggle */}
+            
             <button 
               className="lg:hidden p-2 -ml-2 text-gray-600 hover:text-black transition-colors" 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -26,7 +26,7 @@ const Header = () => {
               {isMenuOpen ? <X size={24} strokeWidth={1.5} /> : <Menu size={24} strokeWidth={1.5} />}
             </button>
 
-            {/* Logo: Clean & High-Contrast */}
+            
             <div className="flex-shrink-0">
               <a href="/" className="group flex items-center gap-1">
                 <div className="bg-blue-600 p-1.5 rounded-lg group-hover:rotate-6 transition-transform duration-300">
@@ -38,7 +38,7 @@ const Header = () => {
               </a>
             </div>
 
-            {/* Desktop Navigation: Animated Underlines */}
+            
             <div className="hidden lg:flex items-center space-x-10 text-[13px] font-semibold uppercase tracking-wider text-gray-600">
               <a href="/shop" className="relative group hover:text-black transition-colors">
                 Shop All
@@ -53,7 +53,7 @@ const Header = () => {
               </a>
             </div>
 
-            {/* Search Bar: Expanding Focus */}
+            
             <div className="hidden md:flex flex-grow max-w-sm relative group">
               <input
                 type="text"
@@ -63,7 +63,7 @@ const Header = () => {
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-blue-600 transition-colors" size={18} strokeWidth={2} />
             </div>
 
-            {/* Action Icons */}
+            
             <div className="flex items-center space-x-2 sm:space-x-5">
               <a href="/profile" className="hidden sm:inline-flex p-2 text-gray-500 hover:bg-gray-100 rounded-full transition-all">
                 <User size={22} strokeWidth={1.5} />
@@ -72,7 +72,7 @@ const Header = () => {
                 <Heart size={22} strokeWidth={1.5} />
               </a>
               
-              {/* Cart with Premium Badge */}
+              
               <a href="/cart" className="relative p-2 text-gray-700 hover:bg-gray-100 rounded-full transition-all">
                 <ShoppingCart size={22} strokeWidth={1.5} />
                 {cartCount > 0 && (
@@ -84,7 +84,7 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Mobile Search: Simplified */}
+          
           <div className="mt-4 md:hidden relative">
             <input
               type="text"
