@@ -1,11 +1,9 @@
 import "./App.css";
-
+import Header from "./components/Header";
 function App() {
   return (
     <>
-      <h1 className="text-4xl  text-blue-600 bg-gray-100 p-4 rounded-lg shadow-md">
-        Welcome to the Dashboard page
-      </h1>
+      <Header></Header>
     </>
   );
 }
